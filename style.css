@@ -275,6 +275,14 @@ aboutについて
     margin-left: 0;
 }
 
+.map-text h2{
+    font-size: 27px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: #342611;
+    padding-bottom: 50px;
+    padding-left: 30px;
+}
+
 .map-text td{
     vertical-align: top;
     letter-spacing: 1px
@@ -283,11 +291,17 @@ aboutについて
 td{
     padding-bottom: 50px;
     padding-left: 30px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: #342611;
 }
 
 .td_h,
 .td_h01{
-    white-space: nowrap
+    white-space: nowrap;
+    font-weight: bold;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 20px;
+    color: #342611;
 }
 
 .td_h01,
@@ -319,6 +333,11 @@ td{
 
     .map-text{
         width: 100%;
+    }
+
+    .map-text h2{
+        padding-left: 0;
+        padding-bottom: 15px;
     }
 
     td,
