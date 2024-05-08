@@ -1,0 +1,375 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+        /* background-color: #EBE3D5; */
+        background-image: url(img/back_img.png);
+}
+
+main{
+    position: relative;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーー
+headerについて
+ーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding-left: 50px;
+}
+
+.logo img{
+    width: 200px;
+    height: auto;
+}
+
+li{
+    list-style: none;
+    padding-right: 50px;
+}
+
+li a{
+    text-decoration: none;
+    color: #8B7659;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 780px) {
+    .logo img{
+        width: 160px;
+        height: auto;
+    }
+
+    .logo{
+        padding-left: 25px;
+    }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーー
+mvについて
+ーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.mv img{
+    width: 100%;
+    height: auto;
+}
+
+.pc { display: block !important; }
+
+.sp { display: none !important; }
+
+@media screen and (max-width: 780px) {
+    .mv img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .pc { display: none !important; }
+    
+    .sp { display: block !important; }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーー
+aboutについて
+ーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.about{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.about1{
+    display: flex;
+    position: relative;
+    margin-top: 150px;
+    align-items: center;
+}
+
+.cnt1,
+.cnt3{
+    width: 49%;
+}
+
+.cnt1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 30px 30px 0;
+}
+
+.cnt2{
+    width: 40%;
+    margin-left: 50px;
+}
+
+.cnt2::after{
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 130%;
+    background-color: #CEB69C;
+    border-radius: 40px 0 0 40px;
+    right: 0;
+    top: -47px;
+    z-index: -1;
+}
+
+.cnt2 h2,
+.cnt4 h2{
+    margin-bottom: 20px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    color: #342611;
+}
+
+.cnt2 p,
+.cnt4 p{
+    line-height: 30px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: #342611;
+    text-align: justify;
+}
+
+.cnt2 a,
+.cnt4 a{
+    color: #342611;
+    padding: 10px 10px;
+    border: 1px solid #000;
+    border-radius: 100px;
+    text-decoration: none;
+    display: block;
+    width: 180px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.about2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    position: relative;
+    align-items: center;
+}
+
+.cnt3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.cnt4{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.cnt4::after{
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 130%;
+    background-color: #CEB69C;
+    border-radius: 0px 40px 40px 0px;
+    left: 0;
+    top: -53px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 780px) {
+    .about1,
+    .about2{
+        flex-direction: column;
+        width: 95vw;
+        margin-top: 100px;
+    }
+    
+    .cnt2::after,
+    .cnt4::after{
+        display: none;
+    }
+
+    .cnt1,
+    .cnt3{
+        width: 100%;
+    }
+
+    .cnt2,
+    .cnt4{
+        width: 90%;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .cnt2 h2,
+    .cnt4 h2{
+        margin-top: 30px;
+    }
+
+    .cnt2 p,
+    .cnt4 p{
+        font-size: 15px;
+    }
+    .cnt3 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0 30px 30px 0;
+    }
+
+
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーー
+アクセスについて
+ーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.access{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1400px;
+}
+
+.map-cnt{
+    width: 50%;
+}
+
+.map-cnt img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.map{
+    margin-top: 20px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 380px;
+    border-radius: 15px;
+}
+
+.map-text{
+    margin-left: 0;
+}
+
+.map-text td{
+    vertical-align: top;
+    letter-spacing: 1px
+}
+
+td{
+    padding-bottom: 50px;
+    padding-left: 30px;
+}
+
+.td_h,
+.td_h01{
+    white-space: nowrap
+}
+
+.td_h01,
+.td01{
+    padding-bottom: 20px;
+}
+
+.td02{
+    padding-bottom: 50px;
+}
+
+.part01{
+    padding-left: 50px;
+}
+
+.part02{
+    padding-left: 109px;
+}
+
+@media screen and (max-width: 780px) {
+    .access{
+        flex-direction: column;
+        width: 85vw;
+    }
+
+    .map-cnt{
+        width: 100%;
+    }
+
+    .map-text{
+        width: 100%;
+    }
+
+    td,
+    .td01,
+    .td02{
+        display: block;
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .td_h01{
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    .td_h,
+    .td_h01{
+        padding-bottom: 15px;
+    }
+
+    .td01{
+        padding-bottom: 5px;
+    }
+
+
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーー
+予約ボタンについて
+ーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.book{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+}
+
+.book-btn img{
+    width: 140px;
+    height: auto;
+}
+
+@media screen and (max-width: 780px) {
+    .book{
+        right: 10px;
+        bottom: 15px;
+    }
+    
+    .book-btn img{
+        width: 95px;
+        height: auto;
+    }
+}
